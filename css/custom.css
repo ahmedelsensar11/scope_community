@@ -1,0 +1,366 @@
+.container
+{
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+
+}
+body
+{
+    padding: 0;
+}
+
+
+.divCont
+{
+    padding: 0px 15px;
+}
+header
+{
+    margin-bottom: 110px;
+}
+
+.formContainer
+{
+    margin-top: 130px;
+    min-height: 407px;
+}
+
+.register-div
+{
+    border: 1px solid rgb(230, 230, 230);
+}
+
+
+.navbarclr
+{
+    background-color: black;
+    border-bottom: 1px solid whitesmoke;
+}
+.poster
+{
+    height: 400px;
+    width: 100%;
+    background-image: url('../images/discussion1.png');
+    background-size: cover;
+}
+.no-posts
+{
+    height: 390px;
+    width: 400px;
+    margin: auto;
+    background-image: url(../images/no_data.png);
+    background-size: cover;
+    font-size: larger;
+    font-weight: bolder;
+    
+}
+.no-user-posts
+{
+    height: 390px;
+    width: 400px;
+    margin: auto;
+    background-image: url(../images/empty.png);
+    background-size: cover;
+    font-size: larger;
+    font-weight: bolder;
+}
+.user-info
+{
+    border-right: 4px solid wheat;
+}
+.profile_info
+{
+    border-left: 1px solid black;
+}
+
+.postPhoto
+{
+    height: 400px;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+}
+.indexUserName
+{
+    font-size: 16px;
+}
+.postTitle
+{
+    color: #F50057;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.28em;
+    min-height: 40px;
+    
+}
+.postBody
+{
+    margin-top: 20px;
+    font-size: 25px;
+    line-height: 2.4rem;
+}
+
+.writerInfo .userName
+{
+    color: green;
+}
+.borderLine
+{
+    width: 80%;
+    height: 1px;
+    margin: auto;
+    background-color: grey;
+}
+
+.fa-bookmark , .fa-feather-alt
+{
+    font-size: 24px;
+}
+
+.errors-alert 
+{
+    list-style-type: none;
+    color: azure;
+    padding: 15px;
+
+}
+
+/* start profile  */
+
+.info-container
+{
+    padding: 20px 15px;
+    border-radius:6px;
+    /*
+    border: 2px solid #08304c; 
+    border-radius:6px;  
+    box-shadow: 5px 6px 0px #08304c;
+    */
+}
+
+.info-list
+{
+    list-style-type: none;
+    color: azure;
+    padding: 15px;
+  
+}
+.info-list .list-user
+{
+    font-size: 50px;
+    font-weight: 700;
+    color: #072a43;
+    font-family: 'Overpass', sans-serif;
+    line-height: 1;
+    
+
+}
+
+.info-list .bio
+{
+    font-style: italic;
+    font-size: 18px;
+}
+.icon-info
+{
+    font-size: 33px;
+    color: sandybrown;
+    margin: 10px 12px;
+}
+.icon-info:hover
+{
+    color: #093656;
+}
+.btn-outline-primary
+{
+    font-weight: bold;
+}
+.side-line
+{
+    border-left: 2px solid #64707d;
+}
+.info-details .detail-titles
+{
+    font-size:14px;
+    font-weight: 700;
+    color: #64707d;
+    margin-bottom: 3px;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+
+}
+.info-details .detail-desc
+{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #101417;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+
+}
+.btn-follow
+{
+    background-color: #093656;
+    border-color: #093656;
+    color: wheat;
+    font-weight: 700;
+}
+.btn-follow:hover
+{
+    background-color: wheat;
+    border-color:wheat ;
+    color: #093656;
+
+}
+
+.img-style
+{
+    border:4px solid rgb(194, 128, 70);
+}
+
+.user-react-list
+{
+    list-style: none;
+    padding: 0px;
+    font-weight: bold;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    color: #64707d;
+}
+.user-react-list h5
+{
+color: rgb(245, 160, 86);
+font-weight: bold;
+
+}
+
+
+.small-pic
+{
+    float: left;
+    height: 40px;
+    width: 40px;
+    
+    overflow: hidden;
+    font-size: 11px;
+}
+.profile-post-body
+{
+    float: left;
+    overflow: hidden;
+}
+.post-icons 
+{
+    font-size: 17px;
+}
+.user-post .post-user-name h4
+{
+    font-size: 15px;
+    font-weight: 300;
+    color: firebrick;
+}
+
+.post-time    
+{
+    color: sandybrown;
+    font-size: 13px;
+    
+}
+/* end profile  */
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+###### start media query  #######
+
+*/
+
+/*start media profile*/
+@media screen and (max-width:980px)
+{
+   .user-react-list
+   {
+     margin-top: 20px;  
+    display: flex;
+    justify-content: center;
+   }
+   .user-react-list li
+   {
+       margin: 0px 5px;
+   }
+   .profile-reacts
+   {
+       margin-top: 20px;
+   }
+   .nav-user-pic
+    {
+        display: none;
+        
+    }
+}
+
+@media screen and (max-width:768px)
+{
+    .side-line
+    {
+        border-top: 2px solid #64707d;
+        border-left: 0px solid #64707d;
+
+    }
+    .user-post .post-user-name h4
+    {
+        font-size: 12px;
+        font-weight: 200;
+        color: firebrick;
+    }
+    .user-post  img
+    {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media screen and (max-width:600px)
+{
+   .post-cont
+   {
+       padding: 0px;
+   }
+  
+}
+@media screen and (max-width:550px)
+{
+    .user-post .post-user-name 
+    {
+        display: none;
+    }
+    
+}
+@media screen and (max-width:500px)
+{
+	.info-list .list-user
+    {
+        font-size: 37px;
+        font-weight: 700;
+        color: #072a43;
+        font-family: 'Overpass', sans-serif;
+        line-height: 1;
+
+    }
+    .icon-info
+    {
+        font-size: 20px;
+        color: sandybrown;
+        margin: 10px 8px;
+    }
+     
+}
+
+
+/*End media profile*/
+

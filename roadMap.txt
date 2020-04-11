@@ -1,0 +1,81 @@
+login =>(login)
+register =>(register)
+(logout)
+
+
+//for not auth
+-home
+-show Post
+
+//for auth
+-addPost =>(addPost)
+-editPost=>(editPost)
+-(deletePost)
+-profile
+
+#database:
+
+#users ( user_id, user_name, user_password, 
+        user_email, joined_at'date', user_bio,
+        user_img, user_link
+    )
+
+#user_detailes (
+    id, user_id, user_posts, user_saves
+)
+
+
+#post  (
+    post_id, user_id, title, desc, reading_time, saved_no, liked_no, created_at
+)    
+
+
+#post_imgs(
+    img_id, post_id, img
+)
+
+
+
+post_save (
+    save_id, post_id, user_id, saved'boolean'
+)
+
+post_like(
+    like_id, post_id, user_id, liked'boolean'
+)
+
+
+----------------
+Used Functions:
+1- is_string($string) => is this var string
+2- strlen($string) =>strin length
+3- array_push($array, $item) => push item in array
+4- return confirm('do you want to logout'); =>alert
+5-substr($post['post_desc'],0,100) => cut string after 100
+6-number_format($post['save_no']) => 1,256,87
+7-filter_var($var , FILTER_TYPE) => check if var is valid ,"WE USE IT FOR VALIDATION" , ex:filter_var($email, FILTER_VALIDATE_EMAIL)
+8- in_array($var , $array) => check var in array or not
+9-pathinfo($file_name) =>path of file
+
+768px => container = 0
+ctrl + f5 => clear cash 
+
+//auth
+#for handlers:
+->
+if(click submit)
+{
+    handle..
+}
+else
+{
+    //if is take action  
+    header('location:index.php');
+}
+
+#for pages:
+=>
+check 
+if not $_SESSION['user_id'] avaliable 
+go to index.php
+
